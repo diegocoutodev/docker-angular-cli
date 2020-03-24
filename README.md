@@ -38,7 +38,7 @@ $ docker build . -t angular-cli
 We will create a project called `myapp` under `$PWD` directory, typing the follow command:
 
 ```
-$ docker run --rm -u $(id -u):$(id -g) -v $PWD:/webapp -v $HOME/.npm:/.npm -v $HOME/.config:/.config diegocoutodev/angular-cli new myapp
+$ docker run --rm -u $(id -u):$(id -g) -v $PWD:/webapp -v $HOME/.cache:/.cache diegocoutodev/angular-cli new myapp
 ```
 
 ### Generate a component
